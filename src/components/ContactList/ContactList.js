@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { v4 as uuidv4 } from 'uuid';
-import './ContactList.scss';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import "./ContactList.scss";
 
 class ContactList extends Component {
   static propTypes = {
@@ -9,7 +8,7 @@ class ContactList extends Component {
       PropTypes.shape({
         name: PropTypes.string.isRequired,
         number: PropTypes.string.isRequired,
-      }),
+      })
     ).isRequired,
 
     onDelete: PropTypes.func.isRequired,
